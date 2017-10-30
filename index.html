@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset-app.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>微商盟-卖家版</title>
+    <script>
+        (function (global) {
+            function remChange() {
+                document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+            }
+            remChange();
+            global.addEventListener('resize', remChange, false);
+        })(window);
+    </script>
+</head>
+
+<body style="visibility:hidden;">
+    <!-- 页面html代码开始 -->
+    <div class="seller-wrapper">
+        <div class="seller-header">
+            <div class="seller-shop">
+                <div class="seller-shop-img">
+                    <!-- 店铺的logo 只需要将店铺logo的路径填写到下面img 标签的src中即可显示 -->
+                    <img class="seller-shop-logo" src="" alt="">
+                </div>
+                <span class="seller-shop-name">店铺名称</span>
+            </div>
+            <div class="seller-header-msg">
+                <i></i>
+                <span>消息</span>
+            </div>
+        </div>
+        <div class="seller-navbar">
+            <div class="seller-navbar-item">
+                <a href="">
+                    <i class="icon-histogram"></i>
+                    <span>我的销量</span>
+                </a>
+            </div>
+            <div class="seller-navbar-solid"></div>
+            <div class="seller-navbar-item">
+                <a href="">
+                    <i class="icon-gold"></i>
+                    <span>我的返利</span>
+                </a>
+
+            </div>
+            <div class="seller-navbar-solid"></div>
+            <div class="seller-navbar-item">
+                <a href="">
+                    <i class="icon-page"></i>
+                    <span>店铺预览</span>
+                </a>
+            </div>
+            <div class="seller-navbar-solid"></div>
+            <div class="seller-navbar-item">
+                <a href="">
+                    <i class="icon-set"></i>
+                    <span>设置</span>
+                </a>
+
+            </div>
+        </div>
+        <div class="seller-goods">
+            <div class="seller-goods-title">
+                <div class="seller-goods-title-text">
+                    我的宝贝
+                </div>
+                <div class="seller-goods-title-more">
+                    <a href="">
+                        <span>更多</span>
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+            <div class="seller-goods-section">
+                <!-- 默认显示6条数据 当用户上拉时 加载更多的数据 -->
+                <div class="seller-goods-container">
+                    <a class="seller-goods-panel" href="">
+                        <img class="seller-goods-img" src="images/pic_01.jpg" alt="">
+                        <span class="recommend-btn">
+                            立即推荐
+                        </span>
+                    </a>
+                    <a class="seller-goods-panel" href="">
+                        <img class="seller-goods-img" src="images/pic_02.jpg" alt="">
+                        <span class="recommend-btn">
+                            立即推荐
+                        </span>
+                    </a>
+                    <a class="seller-goods-panel" href="">
+                        <img class="seller-goods-img" src="images/pic_01.jpg" alt="">
+                        <span class="recommend-btn">
+                            立即推荐
+                        </span>
+                    </a>
+                    <a class="seller-goods-panel" href="">
+                        <img class="seller-goods-img" src="images/pic_02.jpg" alt="">
+                        <span class="recommend-btn">
+                            立即推荐
+                        </span>
+                    </a>
+                    <a class="seller-goods-panel" href="">
+                        <img class="seller-goods-img" src="images/pic_01.jpg" alt="">
+                        <span class="recommend-btn">
+                            立即推荐
+                        </span>
+                    </a>
+                    <a class="seller-goods-panel" href="">
+                        <img class="seller-goods-img" src="images/pic_02.jpg" alt="">
+                        <span class="recommend-btn">
+                            立即推荐
+                        </span>
+                    </a>
+                </div>
+                <!-- 默认上拉加载更多提示 显示 当加载完全部数据时 上拉加载更多提示 隐藏  -->
+                <div class="tip-loadmore">
+                    <i></i>
+                    <span>上拉加载更多</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newcomer-tip">
+        
+    </div>
+    <!-- 页面html代码结束 -->
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementsByTagName('body')[0].style.visibility = 'visible';
+        }, 100)
+    </script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
